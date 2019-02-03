@@ -90,14 +90,14 @@ class Form extends Component {
             nextStep={this.nextStep}
           />
         ) : null}
-        {step === 1 ? (
+        {step !== 1 ? (
           <FormStep1
             handleInputChange={this.handleInputChange}
             handsets={handsets}
             nextStep={this.nextStep}
           />
         ) : null}
-        {step === 2 ? (
+        {step !== 2 ? (
           <FormStep2
             handleInputChange={this.handleInputChange}
             sites={sites}
