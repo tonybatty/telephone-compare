@@ -7,6 +7,7 @@ import FormStep4 from "./FormStep4";
 import FormStep5 from "./FormStep5";
 import FormStep6 from "./FormStep6";
 import "../../styles/components/form.scss";
+import Form2 from "./form2";
 
 class Form extends Component {
   constructor(props) {
@@ -83,10 +84,9 @@ class Form extends Component {
           <label htmlFor="email">Email</label>
           <input type="text" name="email" id="email" />
         </div>
-        <div className="field">
-          <label htmlFor="message">Message</label>
-          <textarea name="message" id="message" rows="6" />
-        </div>
+
+
+        <Form2></Form2>
 
         <div className="form-check">
           <input
