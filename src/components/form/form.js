@@ -84,13 +84,59 @@ class Form extends Component {
           <label htmlFor="email">Email</label>
           <input type="text" name="email" id="email" />
         </div>
-
-        <FormStep1
-          handleInputChange={this.handleInputChange}
-          handsets={handsets}
-          nextStep={this.nextStep}
-        />
-
+        {step === 0 ? (
+          <FormStart
+            handleInputChange={this.handleInputChange}
+            nextStep={this.nextStep}
+          />
+        ) : null}
+        {step === 1 ? (
+          <FormStep1
+            handleInputChange={this.handleInputChange}
+            handsets={handsets}
+            nextStep={this.nextStep}
+          />
+        ) : null}
+        {step === 2 ? (
+          <FormStep2
+            handleInputChange={this.handleInputChange}
+            sites={sites}
+            nextStep={this.nextStep}
+            prevStep={this.prevStep}
+          />
+        ) : null}
+        {step === 3 ? (
+          <FormStep3
+            handleInputChange={this.handleInputChange}
+            broadband={broadband}
+            nextStep={this.nextStep}
+            prevStep={this.prevStep}
+          />
+        ) : null}
+        {step === 4 ? (
+          <FormStep4
+            handleInputChange={this.handleInputChange}
+            system={system}
+            nextStep={this.nextStep}
+            prevStep={this.prevStep}
+          />
+        ) : null}
+        {step === 5 ? (
+          <FormStep5
+            handleInputChange={this.handleInputChange}
+            timespan={timespan}
+            nextStep={this.nextStep}
+            prevStep={this.prevStep}
+          />
+        ) : null}
+        {step === 6 ? (
+          <FormStep6
+            handleInputChange={this.handleInputChange}
+            location={location}
+            distance={distance}
+            prevStep={this.prevStep}
+          />
+        ) : null}
         <ul className="actions">
           <li>
             <input type="submit" value="Send Message" className="special" />
