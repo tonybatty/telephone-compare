@@ -9,6 +9,12 @@ import FormStep6 from "./FormStep6";
 import "../../styles/components/form.scss";
 import Form2 from "./form2";
 
+const encode = data => {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+};
+
 class Form extends Component {
   constructor(props) {
     super(props);
@@ -57,6 +63,7 @@ class Form extends Component {
   };
 
   handleSubmit = e => {
+    console.log("handleSubmit");
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
