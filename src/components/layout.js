@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
-
 import Header from "./header";
 import "../styles/main.scss";
 import "../styles/components/layout.scss";
@@ -18,11 +17,9 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <div className="container">
+      <div className="site-container">
         <Header siteTitle={data.site.siteMetadata.title} />
-        <div className="content">
-          <main className="content__centered">{children}</main>
-        </div>
+        <main className="site-content">{children}</main>
         <footer className="footer">
           Copyright © Telephone Compare {new Date().getFullYear()}. All Rights
           Reserved.

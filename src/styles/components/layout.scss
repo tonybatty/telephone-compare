@@ -1,22 +1,12 @@
-.container {
-  background-color: red;
+.site-container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   //   align-items: center
 }
 
-.content {
-  display: flex;
-  justify-content: center;
-  background-color: blue;
+.site-content {
   flex: 1 0 auto;
-
-  &__centered {
-    max-width: 960px;
-    flex: 1 0 auto;
-    background-color: red;
-  }
 }
 
 .footer {
@@ -25,4 +15,9 @@
   text-align: center;
   color: #4a4a4a;
   font-weight: 300;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 960px;
 }
