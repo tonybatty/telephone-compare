@@ -70,7 +70,7 @@ class Form extends Component {
 
     return (
       <form
-        name="contact"
+        name="test"
         method="post"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
@@ -85,29 +85,11 @@ class Form extends Component {
           <input type="text" name="email" id="email" />
         </div>
 
-
-        <Form2></Form2>
-
-        <div className="form-check">
-          <input
-            type="radio"
-            name="handsets"
-            value="0-10"
-            className="form-check__input"
-            checked="true"
-          />
-          <label htmlFor="handsets">0-10</label>
-        </div>
-
-        <div className="form-check">
-          <input
-            type="radio"
-            name="handsets"
-            value="10-50"
-            className="form-check__input"
-          />
-          <label htmlFor="handsets">10-50</label>
-        </div>
+        <FormStep1
+          handleInputChange={this.handleInputChange}
+          handsets={handsets}
+          nextStep={this.nextStep}
+        />
 
         <ul className="actions">
           <li>

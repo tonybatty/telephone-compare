@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 
 const FormStep1 = ({ handleInputChange, handsets, nextStep }) => (
   <div className="form">
-    <input type="hidden" name="bot-field" />
     <h1>1. How many handsets/telephones do you wish to connect?</h1>
 
     <div className="form-check">
