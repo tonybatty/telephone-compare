@@ -64,10 +64,11 @@ class Form extends Component {
 
   handleSubmit = e => {
     console.log("handleSubmit");
+    console.log(encode({ "form-name": "test", ...this.state }));
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...this.state })
+      body: encode({ "form-name": "test", ...this.state })
     })
       .then(() => alert("Success!"))
       .catch(error => alert(error));
@@ -88,7 +89,7 @@ class Form extends Component {
     } = this.state;
 
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form onSubmit={this.handleSubmit} name="test">
         <div className="field half first">
           <label htmlFor="name">Name</label>
           <input type="text" name="name" id="name" />
