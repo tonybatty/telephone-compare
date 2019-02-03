@@ -56,6 +56,18 @@ class Form extends Component {
     });
   };
 
+  handleSubmit = e => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...this.state })
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error));
+
+    e.preventDefault();
+  };
+
   render() {
     const {
       step,
@@ -69,13 +81,7 @@ class Form extends Component {
     } = this.state;
 
     return (
-      <form
-        name="test"
-        method="post"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
-      >
-        <input type="hidden" name="bot-field" />
+      <form onSubmit={this.handleSubmit}>
         <div className="field half first">
           <label htmlFor="name">Name</label>
           <input type="text" name="name" id="name" />
@@ -90,14 +96,14 @@ class Form extends Component {
             nextStep={this.nextStep}
           />
         ) : null}
-        {step !== 1 ? (
+        {step === 1 ? (
           <FormStep1
             handleInputChange={this.handleInputChange}
             handsets={handsets}
             nextStep={this.nextStep}
           />
         ) : null}
-        {step !== 2 ? (
+        {step === 2 ? (
           <FormStep2
             handleInputChange={this.handleInputChange}
             sites={sites}
