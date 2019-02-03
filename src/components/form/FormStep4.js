@@ -3,9 +3,7 @@ import PropTypes from "prop-types";
 
 const FormStep4 = ({ handleInputChange, system, nextStep, prevStep }) => (
   <div className="form">
-    <input type="hidden" name="bot-field" />
     <h1>4. Is there a specific system type you are interested in?</h1>
-
     <div className="form-check">
       <input
         type="radio"

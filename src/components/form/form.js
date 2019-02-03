@@ -90,14 +90,6 @@ class Form extends Component {
 
     return (
       <form onSubmit={this.handleSubmit} name="test">
-        <div className="field half first">
-          <label htmlFor="name">Name</label>
-          <input type="text" name="name" id="name" />
-        </div>
-        <div className="field half">
-          <label htmlFor="email">Email</label>
-          <input type="text" name="email" id="email" />
-        </div>
         {step === 0 ? (
           <FormStart
             handleInputChange={this.handleInputChange}

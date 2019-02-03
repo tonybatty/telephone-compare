@@ -3,9 +3,7 @@ import PropTypes from "prop-types";
 
 const FormStep5 = ({ handleInputChange, timespan, nextStep, prevStep }) => (
   <div className="form">
-    <input type="hidden" name="bot-field" />
     <h1>5. How soon do you want your solution installed?</h1>
-
     <div className="form-check">
       <input
         type="radio"

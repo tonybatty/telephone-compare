@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 const FormStep2 = ({ handleInputChange, sites, nextStep, prevStep }) => (
   <div className="form">
     <h1>2. How many sites/offices will your phones be spread across?</h1>
-
     <div className="form-check">
       <input
         type="radio"
@@ -14,7 +13,7 @@ const FormStep2 = ({ handleInputChange, sites, nextStep, prevStep }) => (
         className="form-check__input"
         checked={sites === "1"}
       />
-      <label htmlFor="handsets">1</label>
+      <label>1</label>
     </div>
 
     <div className="form-check">
@@ -26,7 +25,7 @@ const FormStep2 = ({ handleInputChange, sites, nextStep, prevStep }) => (
         className="form-check__input"
         checked={sites === "1-5"}
       />
-      <label htmlFor="handsets">1-5</label>
+      <label>1-5</label>
     </div>
 
     <div className="form-check">
@@ -38,7 +37,7 @@ const FormStep2 = ({ handleInputChange, sites, nextStep, prevStep }) => (
         className="form-check__input"
         checked={sites === "5-10"}
       />
-      <label htmlFor="handsets">5-10</label>
+      <label>5-10</label>
     </div>
 
     <div className="form-check">
@@ -50,7 +49,7 @@ const FormStep2 = ({ handleInputChange, sites, nextStep, prevStep }) => (
         className="form-check__input"
         checked={sites === "10+"}
       />
-      <label htmlFor="handsets">10+</label>
+      <label>10+</label>
     </div>
     <ul className="actions">
       <li>

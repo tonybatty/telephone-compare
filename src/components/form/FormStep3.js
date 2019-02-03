@@ -3,9 +3,7 @@ import PropTypes from "prop-types";
 
 const FormStep3 = ({ handleInputChange, broadband, nextStep, prevStep }) => (
   <div className="form">
-    <input type="hidden" name="bot-field" />
     <h1>3. What broadband do you currently have on site?</h1>
-
     <div className="form-check">
       <input
         type="radio"

@@ -3,9 +3,7 @@ import PropTypes from "prop-types";
 
 const FormStep6 = ({ handleInputChange, location, distance, prevStep }) => (
   <div className="form">
-    <input type="hidden" name="bot-field" />
     <h1>6. How local do you want your supplier to be?</h1>
-
     <div className="form-text">
       <label htmlFor="location">Location</label>
       <input
