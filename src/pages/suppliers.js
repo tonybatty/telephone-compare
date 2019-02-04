@@ -7,9 +7,11 @@ import SEO from "../components/seo";
 const Suppliers = () => (
   <Layout>
     <SEO title="Suppliers" />
-    <h1>Suppliers</h1>
-    <p>Text here</p>
-    <Link to="/">Go back to the homepage</Link>
+    <div className="container">
+      <h1>Suppliers</h1>
+      <p>Text here</p>
+      <Link to="/">Go back to the homepage</Link>
+    </div>
   </Layout>
 );
 
