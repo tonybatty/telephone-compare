@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/components/HowItWorks.scss";
+import "../styles/components/howItWorks.scss";
 import form from "../images/form.png";
 import report from "../images/report.png";
 import profile from "../images/profile.png";
