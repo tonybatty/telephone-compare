@@ -1,0 +1,35 @@
+.howItWorks {
+  padding: 4rem 0;
+
+  &__title {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 2rem;
+  }
+}
+
+.row {
+  display: flex;
+
+  &__column {
+    flex: 1;
+    text-align: center;
+
+    &:nth-child(2) {
+      margin: 0 3rem;
+    }
+
+    h2 {
+      font-size: 1em;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+    }
+
+    p {
+      font-size: 0.9em;
+      font-weight: 300;
+      margin-bottom: 1rem;
+    }
+  }
+}
