@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const FormStep1 = ({ handleInputChange, handsets, nextStep }) => (
-  <div className="form">
+  <div className="form-questions">
     <p className="form-heading">
       How many handsets/telephones do you wish to connect?
     </p>

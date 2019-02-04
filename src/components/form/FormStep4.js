@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const FormStep4 = ({ handleInputChange, system, nextStep, prevStep }) => (
-  <div className="form">
+  <div className="form-questions">
     <p className="form-heading">
       Is there a specific system type you are interested in?
     </p>

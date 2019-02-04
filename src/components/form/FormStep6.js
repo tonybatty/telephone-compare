@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const FormStep6 = ({ handleInputChange, location, distance, prevStep }) => (
-  <div className="form">
+  <div className="form-questions">
     <p className="form-heading">How local do you want your supplier to be?</p>
     <div className="form-text">
       <label>

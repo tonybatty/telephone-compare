@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const FormStep2 = ({ handleInputChange, sites, nextStep, prevStep }) => (
-  <div className="form">
+  <div className="form-questions">
     <p className="form-heading">
       How many sites/offices will your phones be spread across?
     </p>

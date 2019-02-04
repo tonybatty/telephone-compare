@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const FormStep5 = ({ handleInputChange, timespan, nextStep, prevStep }) => (
-  <div className="form">
+  <div className="form-questions">
     <p className="form-heading">
       How soon do you want your solution installed?
     </p>

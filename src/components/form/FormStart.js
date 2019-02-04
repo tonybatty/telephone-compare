@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const FormStart = ({ handleInputChange, handsets, nextStep }) => (
-  <div className="form">
+  <div>
     <p className="form-heading">Free Business Telephone System Quote</p>
     <input
       type="button"

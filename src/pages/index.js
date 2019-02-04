@@ -1,9 +1,9 @@
 import React from "react";
 // import { Link } from "gatsby"
-
 import Layout from "../components/layout";
 import Form from "../components/form/form";
 import HowItWorks from "../components/howItWorks";
+import Telecoms from "../components/telecoms";
 // import Image from "../components/image"
 import SEO from "../components/seo";
 
@@ -12,6 +12,7 @@ const IndexPage = () => (
     <SEO title="Home" keywords={[`Telephone`, `compare`, `quote`]} />
     <Form />
     <HowItWorks />
+    <Telecoms />
     {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
