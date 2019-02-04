@@ -22,8 +22,8 @@ module.exports = {
         name: `Telephone Compare`,
         short_name: `Telecoms`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#00d1b2`,
+        theme_color: `#00d1b2`,
         display: `minimal-ui`,
         icon: `src/images/logo.png` // This path is relative to the root of the site.
       }
