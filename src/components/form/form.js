@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import FormStart from "./FormStart";
-import FormStep1 from "./FormStep1";
-import FormStep2 from "./FormStep2";
-import FormStep3 from "./FormStep3";
-import FormStep4 from "./FormStep4";
-import FormStep5 from "./FormStep5";
-import FormStep6 from "./FormStep6";
+import FormStart from "./formStart";
+import FormStep1 from "./formStep1";
+import FormStep2 from "./formStep2";
+import FormStep3 from "./formStep3";
+import FormStep4 from "./formStep4";
+import FormStep5 from "./formStep5";
+import FormStep6 from "./formStep6";
 import "../../styles/components/form.scss";
 
 class Form extends Component {

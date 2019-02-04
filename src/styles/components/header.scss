@@ -14,6 +14,7 @@
   height: 32px;
   width: 32px;
   margin: auto 8px;
+  margin-left: 0;
 }
 
 .navbar-brand {
@@ -44,7 +45,7 @@
     align-items: center;
     text-decoration: none;
     color: rgb(24, 24, 24);
-    padding: 12px;
+    padding-left: 1.5rem;
     height: 100%;
   }
 }
