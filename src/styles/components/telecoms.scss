@@ -32,7 +32,6 @@
   text-align: center;
 
   &__title {
-    padding-top: 1.5rem;
     font-size: 1.3em;
     font-weight: 600;
   }
@@ -40,6 +39,7 @@
   &__info {
     font-size: 1em;
     font-weight: 300;
+    line-height: 1.4em;
   }
 }
 

@@ -9,7 +9,7 @@ const About = () => (
     <SEO title="About" />
     <div className="container">
       <div className="content">
-        <h1 howItWorks__title>About</h1>
+        <h1 className="page-title">About</h1>
         <p>Text here</p>
         <Link to="/">Go back to the homepage</Link>
       </div>

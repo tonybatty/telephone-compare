@@ -12,7 +12,7 @@ const HowItWorks = () => (
       <div className="row">
         <div className="row__column">
           <img src={form} alt="form" />
-          <h2>Fill out the form</h2>
+          <h2>Fill out our form</h2>
           <p>
             Answer a few simple questions about your business telecoms
             requirements
@@ -20,13 +20,16 @@ const HowItWorks = () => (
         </div>
         <div className="row__column">
           <img src={report} alt="report" />
-          <h2>Receive up to five Quotes from local suppliers</h2>
-          <p>They will not receive your information, you contact them</p>
+          <h2>Receive Quotes</h2>
+          <p>
+            Receive up to 5 quotes from local suppliers. They will not receive
+            your information, you contact them
+          </p>
         </div>
         <div className="row__column">
           <img src={profile} alt="profile" />
-          <h2>View your suppliers profiles</h2>
-          <p>Find out about them and see other users reviews</p>
+          <h2>View your suppliers</h2>
+          <p>Find out about your suppliers and see other users reviews</p>
         </div>
       </div>
     </div>
